@@ -1,0 +1,498 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #f0f0f0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .content {
+    margin-top: 60px; /* Espacio para el header fijo */
+   
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+ 
+  .scroll-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #333;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+ 
+  .scroll-icon.active {
+    transform: translateY(-100px);
+  }
+  
+  .info-section {
+    text-align: center;
+    margin: 100px auto;
+  }
+  
+  .info-button {
+    background-color: #66BB6A;
+    color: #fff;
+    border: 2px solid #66BB6A;
+    border-radius: 50px;
+    padding: 10px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .info-button:hover {
+    background-color: #fff;
+    color: #66BB6A;
+    box-shadow: 0px 0px 10px 0px #66BB6A;
+  }
+  
+  .info-subtitle {
+    color: #333;
+    margin-top: 20px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .content {
+    flex: 1;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .section {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .info-button {
+    background-color: transparent;
+    color: #66BB6A;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, #66BB6A, #66BB6A, transparent) 1;
+    border-image-slice: 1;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .info-button:hover {
+    background-color: #66BB6A;
+    color: #fff;
+    box-shadow: 0px 0px 10px 0px #66BB6A;
+  }
+  
+  .info-subtitle {
+    color: #333;
+    margin-bottom: 20px;
+  }
+ 
+.header-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .header-links li {
+    margin: 0 15px;
+  }
+  
+  .header-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .header-links li a:hover {
+    color: #66BB6A;
+  }
+  
+ 
+  .info-section {
+    text-align: center;
+    margin: 60px auto; 
+  }
+  
+  
+  .info-section {
+    text-align: center;
+    margin: -50px auto; /* Reduce el margen superior */
+  }
+  
+  .info-subtitle {
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  /* Estilos para el logo */
+  .info-section img {
+    max-width: 250px; 
+    margin-bottom: 10px;
+  }
+  /* Estilos para el cuadro con espacios de colores */
+.color-box {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+    width: 80%;
+  }
+  
+  .color-space {
+    flex: 1;
+    height: 100px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Agrega las animaciones de colores para los espacios */
+  .color-space:nth-child(1) {
+    background-color: #66BB6A;
+  }
+  
+  .color-space:nth-child(2) {
+    background-color: #3498db;
+  }
+  
+  .color-space:nth-child(3) {
+    background-color: #e74c3c;
+  }
+
+
+/* Estilos para el cuadro vertical con imágenes y texto */
+/* Estilos para el cuadro vertical con imágenes y texto */
+.image-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+    width: 80%;
+  }
+  
+  .image-title {
+    text-align: right; /* Alinea el texto a la derecha */
+    color: #0066cc; /* Color azul fuerte */
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .image-space {
+    margin: 0 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .main-image-space {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Alinea a la derecha */
+    order: -1;
+  }
+  
+  .main-image-space img {
+    max-width: 100%;
+    transition: transform 0.3s ease;
+  }
+  
+  .main-image-space:hover img {
+    transform: scale(1.2);
+  }
+  /* Estilos para el cuadro vertical con imágenes y texto */
+  /* Estilos para el cuadro vertical con imágenes y texto */
+.image-box {
+    display: flex;
+    align-items: center;
+    margin: 40px auto;
+    width: 80%;
+  }
+  
+  .image-title {
+    flex: 1; /* Toma el espacio necesario */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .image-title h2 {
+    color: #333;
+  }
+  
+  .image-space {
+    margin-right: 15px; /* Espacio entre las imágenes */
+    overflow: hidden; /* Evita que las imágenes se salgan del contenedor */
+    transition: transform 0.3s ease; /* Añade transición para el efecto */
+  }
+  
+  .main-image-space {
+    order: -1; /* Cambia el orden para que la imagen grande esté primero visualmente */
+  }
+  
+  .image-space:hover {
+    transform: scale(1.1); /* Aplica el aumento al pasar el mouse */
+  }
+  
+  .image-space img {
+    max-width: 100%;
+    transition: transform 0.3s ease; /* Añade transición a la imagen */
+  }
+  
+  .image-space:hover img {
+    transform: scale(1.2); /* Aplica el aumento a la imagen al pasar el mouse */
+  }
+  
+  .image-info {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .image-info h2 {
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .image-info p {
+    color: #666;
+    margin: 5px 0;
+  }
+ /* Estilos para el cuadro vertical con beneficios y botón */
+.content1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;
+    width: 80%;
+  }
+  
+  .benefits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .benefit {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .benefit:hover {
+    background-color: #66BB6A;
+    color: white;
+  }
+  
+  .button {
+    margin: 20px 0;
+  }
+  
+  button {
+    background-color: #66BB6A;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #4CAF50;
+  }
+/* Estilos para la sección de logotipos */
+.content5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .logo-box {
+    display: flex;
+    gap: 20px; /* Espacio entre los logotipos */
+  }
+  
+  .logo-box a {
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo-box a:hover {
+    transform: scale(1.1);
+  }
+  
+  .logo-box img {
+    width: 40px; /* Ajusta el tamaño de los logotipos */
+  }
+
+/* Estilos para el cuadro horizontal con cajas */
+.content7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .horizontal-box {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  .box {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-color: #f9f9f9;
+  }
+  
+  .box:hover {
+    transform: scale(1.1);
+  }
+  
+  .box.active {
+    background-color: #66BB6A;
+    color: white;
+    transform: translateY(-100%);
+  }
+  
+  .box h3 {
+    margin-top: 0;
+  }
+  
+  .box-content {
+    display: none;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .box.active .box-content {
+    display: block;
+  }
+  /* Estilos para las imágenes circulares y descripciones */
+.content0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .image-section {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .image-container {
+    text-align: center;
+  }
+  
+  .image-container img {
+    width: 100px; /* Ajusta el tamaño de la imagen */
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .image-info {
+    text-align: center;
+  }
+  
+  .image-info p {
+    margin: 0;
+    color: #666;
+  }
+  
+  button {
+    background-color: #66BB6A;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #4CAF50;
+  }
+  /* Estilos para el pie de página minimalista */
+footer {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .social-icons {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-icons li a img {
+    width: 30px;
+    height: 30px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .social-icons li a img:hover {
+    opacity: 0.7;
+  }
+  
+  
